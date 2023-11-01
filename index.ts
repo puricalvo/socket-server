@@ -6,7 +6,7 @@ import cors from "cors";
 
   // Servicio REST tradicional con Express....
 
- const server = new Server();
+ const server = Server.instance;
 
  // BodyParser
  server.app.use( bodyParser.urlencoded({ extended: true }) );
