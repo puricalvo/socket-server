@@ -17,7 +17,7 @@ export class UsuariosLista {
     }
 
     // Actualizar nombre de usuario
-    public ActualizarNombre( id: string, nombre: string ) {
+    public actualizarNombre( id: string, nombre: string ) {
     
         for( let usuario of this.lista ) {
         
@@ -34,7 +34,7 @@ export class UsuariosLista {
 
     // Obtener Lista de todos los usuarios de la lista
     public getLista() {
-        return this.lista;
+        return this.lista.filter( usuario => usuario.nombre !== 'sin-nombre');
     }
 
     // Obtener un usuario
